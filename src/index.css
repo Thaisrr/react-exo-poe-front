@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+:root {
+  --dark: #030035;
+  --shadow: #03003544;
+  --primary: #ffc759;
+  --secondary: #f65050;
+  --title-font: 'Acme', sans-serif;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +13,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h3 {
+  font-family: var(--title-font);
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+h1::after {
+  width: 100%;
+  height: .5em;
+  position: absolute;
+  bottom: -60%;
+  background-color: var(--primary);
+  z-index: -1;
+
 }
