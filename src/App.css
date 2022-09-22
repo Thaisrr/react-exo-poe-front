@@ -1,8 +1,16 @@
+nav {
+  display: flex;
+  gap: 30px;
+}
 
+main {
+  width: 80%;
+  margin: auto;
+}
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   width: 80%;
   margin: auto;
@@ -10,7 +18,7 @@
 
 .card {
   border-radius: 5px;
-  box-shadow: 2px 2px 7px var(--shadow);
+  box-shadow: 2px 2px 15px 4px var(--shadow);
   height: 340px;
   overflow: hidden;
 }
